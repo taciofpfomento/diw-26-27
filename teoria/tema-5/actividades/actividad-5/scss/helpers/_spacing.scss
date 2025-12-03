@@ -1,0 +1,39 @@
+$mp-map: (
+  "p": "padding",
+  "m": "margin"
+);
+
+@each $mp, $prop in $mp-map {
+  @for $i from 0 through 5 {
+    $mpsize: (
+      $i/3) * 1rem;
+
+    .#{$mp}-#{$i} {
+      #{$prop}: $mpsize;
+    }
+
+    .#{$mp}x-#{$i} {
+      #{$prop}: 0rem $mpsize;
+    }
+
+    .#{$mp}y-#{$i} {
+      #{$prop}: $mpsize 0rem;
+    }
+
+    .#{$mp}r-#{$i} {
+      #{$prop}-right: $mpsize;
+    }
+
+    .#{$mp}t-#{$i} {
+      #{$prop}-top: $mpsize;
+    }
+
+    .#{$mp}l-#{$i} {
+      #{$prop}-left: $mpsize;
+    }
+
+    .#{$mp}b-#{$i} {
+      #{$prop}-bottom: $mpsize;
+    }
+  }
+}

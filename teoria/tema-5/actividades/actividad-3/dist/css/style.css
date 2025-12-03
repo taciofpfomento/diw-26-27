@@ -1,1 +1,57 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: "Verdana";
+  color: white;
+  background-color: #333333;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 5px solid white;
+}
+@media screen and (min-width: 600px) {
+  body {
+    color: black;
+    background-color: hsl(0, 0%, 120%);
+    margin: 1.25rem;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    border: 5px solid black;
+  }
+}
+body h1 {
+  font-family: "Anton";
+  font-size: 1.75rem;
+  padding: 2rem;
+}
+body article p {
+  padding: 2rem;
+}
+body a {
+  display: block;
+  width: 130px;
+  font-family: "Anton";
+  color: black;
+  background-color: hsl(0, 0%, 120%);
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 5px solid black;
+}
+body a:hover {
+  color: dimgrey;
+  background-color: #c9c9c9;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: 5px solid dimgrey;
+}/*# sourceMappingURL=style.css.map */

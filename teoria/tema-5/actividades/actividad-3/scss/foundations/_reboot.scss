@@ -1,0 +1,45 @@
+@use 'variables' as vars;
+@use 'mixins' as mx;
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: vars.$fontstack-text;
+
+  @include mx.colorchange(white, 1rem);
+
+  @media screen and (min-width: vars.$small) {
+    @include mx.colorchange(black, 1.25rem);
+  }
+
+  h1 {
+    font: {
+      family: vars.$fontstack-titles;
+      size: 1.75rem
+    }
+
+    padding:2rem;
+  }
+
+  article {
+    p {
+      padding: 2rem;
+    }
+  }
+
+  a {
+    display: block;
+    width: 130px;
+    font-family: vars.$fontstack-titles;
+
+    @include mx.colorchange(black, 1rem);
+
+    &:hover {
+      @include mx.colorchange(dimgrey, 1rem);
+    }
+  }
+}

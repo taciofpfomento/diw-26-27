@@ -1,7 +1,9 @@
 @use "sass:color";
+@use '../variables' as vars;
 
 .border {
-  @each $key, $value in $color-map {
+  @each $key, $value in vars.$color-map {
+
     //.border-primary, .border-danger, ...
     &-#{$key} {
       border: 1px solid color.adjust($value, $lightness: -10%);

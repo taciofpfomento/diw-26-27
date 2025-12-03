@@ -50,6 +50,5 @@
 			}
 		}
 	},
-	"remoteUser": "root",
-	"postStartCommand": "chmod +x uv_activate.sh"
+	"remoteUser": "root"
 }

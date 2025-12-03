@@ -1,0 +1,8 @@
+@use '../variables' as vars;
+@use '../mixins/colorbox' as cb;
+
+@each $color-name, $color in vars.$color-map {
+  .box-#{$color-name} {
+    @include cb.color-box($color)
+  }
+}

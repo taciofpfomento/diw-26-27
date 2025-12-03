@@ -1,0 +1,16 @@
+@use 'sass:color';
+
+@function invert_light($color, $lightness: 20%) {
+  $inverted-color: color.invert($color);
+  @return color.adjust($inverted-color, $lightness: $lightness);
+}
+
+@mixin colorchange($color, $size: 14px) {
+  color: $color;
+  background-color: invert_light($color);
+  margin: $size;
+  padding: $size;
+  font-size: $size;
+  line-height: 1.5 * $size;
+  border: 5px solid $color;
+}

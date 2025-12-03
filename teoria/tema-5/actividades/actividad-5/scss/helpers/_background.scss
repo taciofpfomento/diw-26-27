@@ -1,0 +1,11 @@
+@use '../variables' as vars;
+
+@each $color-name, $color in vars.$color-map {
+  @for $i from 0 through 10 {
+    $size: 10 * $i;
+
+    .bg-#{$color-name}-#{$size} {
+      background-color: rgba($color: $color, $alpha: $size/100);
+    }
+  }
+}

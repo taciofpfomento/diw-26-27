@@ -1,3 +1,7 @@
+@use 'helpers/spacing';
+@use 'helpers/background';
+@use 'helpers/box';
+
 // Import fonts & icons
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');

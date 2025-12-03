@@ -1,10 +1,11 @@
 [project]
-name = "diw-25-26"
+name = "api-rest"
 version = "0.1.0"
-description = "DIW 25-26"
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.121.0",
-    "psycopg2-binary>=2.9.11",
+    "psycopg[binary]>=3.2.13",
+    "pydantic-settings>=2.12.0",
 ]
