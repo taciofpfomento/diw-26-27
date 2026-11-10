@@ -25,7 +25,8 @@
 				"charliermarsh.ruff",
 				"kevinrose.vsc-python-indent",
 				"njpwerner.autodocstring",
-				"usernamehw.errorlens"
+				"usernamehw.errorlens",
+				"humao.rest-client"
 			],
 			"settings": {
 				"python.terminal.activateEnvInCurrentTerminal": true,

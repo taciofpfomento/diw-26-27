@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    color: lightskyblue
+}
+
+a:visited {
+    color: inherit;
+}
+
+.link1:hover {
+    color: lightsalmon
+}

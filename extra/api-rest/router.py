@@ -1,6 +1,10 @@
-from main import app
+import fastapi
+from fastapi import APIRouter
 
-@app.get("/{adjetivo}")
+router = APIRouter()
+
+
+@router.get("/{adjetivo}")
 def read_root(adjetivo: str):
     index = f"""
 <!DOCTYPE html>
@@ -20,9 +24,9 @@ def read_root(adjetivo: str):
 </html>
 """
 
-    return HTMLResponse(index)
+    return fastapi.HTMLResponse(index)
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
+@router.get("/items/{item_id}")
+def read_item(item_id: int, q: str | None = None):
     return {"item_id": item_id, "q": q}
