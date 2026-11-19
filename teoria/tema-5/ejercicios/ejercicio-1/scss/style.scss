@@ -1,0 +1,86 @@
+@use 'foundations/variables' as vars;
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+* {
+    box-sizing: border-box;
+
+    font: {
+        family: vars.$fontstack;
+        size: vars.$fontsize;
+    }
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container {
+    width: 800px;
+    height: 90vh;
+
+    nav {
+        height: 8%;
+
+        // flex container de ul
+        display: flex;
+
+        ul {
+            list-style: none;
+
+            // flex-item de nav
+            flex: {
+                grow: 1;
+            }
+
+            // Flex container de li
+            display: flex;
+            align-items: center;
+
+            li {
+                border: 3px solid vars.$primary_dark;
+                background-color: vars.$primary;
+
+                // flex-item de ul
+                flex : {
+                    grow: 1;
+                }
+                
+                text-align: center;
+
+                a {
+                    color: vars.$primary_dark;
+                    text: {
+                        decoration: none;
+                    }
+                }
+                
+                transition: {
+                    property: color background-color border-color;
+                    duration: 1s;
+                }
+
+                &:hover {
+                    background-color: vars.$primary_dark;
+                    border-color: vars.$primary;
+
+                    a {
+                        color: vars.$primary;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        h1 {
+            color: vars.$primary_dark;
+        }
+    }
+}
+
+@media screen and (max-width: vars.$sm_breakpoint) {
+    ul {
+        flex: {
+            direction: column;
+        }
+    }
+}

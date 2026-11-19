@@ -1,0 +1,14 @@
+@use "foundations/variables" as vars;
+@use "foundations/functions" as funcs;
+
+$base_size: 10px;
+$base_class: ".container";
+$base_prop: "background-color";
+
+#{$base_class}-fluid {
+      @warn "HOLA MUNDO CRUEL!!!!";
+      width: $base_size;
+      #{$base_prop}: blue;
+      color: vars.$dark_mode_color;
+      width: funcs.divide(2);
+}

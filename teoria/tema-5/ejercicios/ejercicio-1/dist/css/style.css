@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Gotu", "sans-serif";
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#container {
+  width: 800px;
+  height: 90vh;
+}
+#container nav {
+  height: 8%;
+  display: flex;
+}
+#container nav ul {
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+#container nav ul li {
+  border: 3px solid rgb(7.7, 117.04, 184.8);
+  background-color: lightskyblue;
+  flex-grow: 1;
+  text-align: center;
+}
+#container nav ul li a {
+  color: rgb(7.7, 117.04, 184.8);
+  text-decoration: none;
+}
+#container nav ul li {
+  transition-property: color background-color border-color;
+  transition-duration: 1s;
+}
+#container nav ul li:hover {
+  background-color: rgb(7.7, 117.04, 184.8);
+  border-color: lightskyblue;
+}
+#container nav ul li:hover a {
+  color: lightskyblue;
+}
+#container main h1 {
+  color: rgb(7.7, 117.04, 184.8);
+}
+
+@media screen and (max-width: 650px) {
+  ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
